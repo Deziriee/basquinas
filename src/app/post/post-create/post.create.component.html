@@ -1,0 +1,22 @@
+<div class="box">
+
+  <div class="container">
+    <mat-card>
+        <h1>Post Create</h1>
+      
+       
+        <mat-form-field appearance="fill">
+          <mat-label>Post Content</mat-label>
+          <textarea matInput [(ngModel)]="PostInput" placeholder="Input here..." rows="4" cols="30"></textarea>
+        </mat-form-field>
+      
+        <hr>
+      
+        
+        <button mat-raised-button color="primary" (click)="onAddPost()">Save</button>
+      
+        <p>{{ newPost }}</p>
+      </mat-card>
+  </div>
+
+</div>
